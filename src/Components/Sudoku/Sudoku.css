@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.App {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: bisque;
+    border: 3px solid rgb(133, 85, 26);
+}
+
+td {
+    padding: 0;
+}
+
+.Rowborder {
+    border-bottom: 2px solid black;
+}
+
+.Colborder {
+    border-right: 2px solid black;
+}
+
+.cellInput {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid rgb(109, 99, 99);
+    outline: none;
+    font-size: 1.2em;
+}
+
+.btncontainer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    color: rgb(101, 99, 99);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(133, 85, 26);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .cellInput {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+
+    .btncontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .cellInput {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        width: 100%;
+    }
+}
